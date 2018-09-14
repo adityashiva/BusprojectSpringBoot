@@ -29,6 +29,14 @@ public class Busdetails {
 
    }
 
+    public int getSerialNo() {
+        return serialNo;
+    }
+
+    public void setSerialNo(int serialNo) {
+        this.serialNo = serialNo;
+    }
+
     public String getRating() {
         return rating;
     }

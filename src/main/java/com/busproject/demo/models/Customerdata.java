@@ -8,6 +8,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "customerdata")
 public class Customerdata {
+    @Id
     @Column(name = "arrival")
     String arrival;
     @Column(name = "destination")
@@ -18,9 +19,10 @@ public class Customerdata {
     String time;
     @Column(name = "duration")
     String duration;
-    @Id
+
     @Column(name = "username")
     String username;
+
 
     public String getArrival() {
         return arrival;
