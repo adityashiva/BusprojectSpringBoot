@@ -1,13 +1,11 @@
 package com.busproject.demo.models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "customerdata")
 public class Customerdata {
+    @Id
     @Column(name = "arrival")
     String arrival;
     @Column(name = "destination")
@@ -18,9 +16,24 @@ public class Customerdata {
     String time;
     @Column(name = "duration")
     String duration;
-    @Id
+
     @Column(name = "username")
     String username;
+
+    @GeneratedValue
+    int customerno;
+
+    public int getCustomerno() {
+        return customerno;
+    }
+
+    public void setCustomerno(int customerno) {
+        this.customerno = customerno;
+    }
+
+
+
+
 
     public String getArrival() {
         return arrival;

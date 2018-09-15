@@ -15,6 +15,7 @@ public class Customercontroller {
    @PostMapping(value = "/savecustomerdata")
     public Customerdata saveCustomerdata(@RequestBody Customerdata customerdata)
    {
+       System.out.println("save customer data");
        return customerdataServices.savecustomerdata(customerdata);
    }
 

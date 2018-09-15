@@ -23,11 +23,42 @@ public class Busdetails {
     String time;
    @Column(name = "duration")
    String duration;
+   @Column(name="travels")
+    String travels;
+    @Column(name = "amount")
+    int amount;
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+
+    public String getTravels() {
+        return travels;
+    }
+
+    public void setTravels(String travels) {
+        this.travels = travels;
+    }
+
+
 
    public Busdetails()
    {
 
    }
+
+    public int getSerialNo() {
+        return serialNo;
+    }
+
+    public void setSerialNo(int serialNo) {
+        this.serialNo = serialNo;
+    }
 
     public String getRating() {
         return rating;
