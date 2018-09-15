@@ -1,9 +1,6 @@
 package com.busproject.demo.models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "customerdata")
@@ -22,6 +19,20 @@ public class Customerdata {
 
     @Column(name = "username")
     String username;
+
+    @GeneratedValue
+    int customerno;
+
+    public int getCustomerno() {
+        return customerno;
+    }
+
+    public void setCustomerno(int customerno) {
+        this.customerno = customerno;
+    }
+
+
+
 
 
     public String getArrival() {
